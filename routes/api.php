@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\CategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,8 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('message',function(){
-    return response()->json([
-        'message'=>'Welcome to Laravel Api'
-    ]);
-});
+Route::get('message',[CategoryController::class, 'index']);
