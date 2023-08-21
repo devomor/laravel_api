@@ -13,4 +13,10 @@ class CategoryController extends Controller
             'message' => 'Welcome to Laravel Api'
         ]);
     }
+    public function store(Request $request){
+        return response() ->json([
+            'form_request' => $request->all(),
+        ]);
+
+    }
 }

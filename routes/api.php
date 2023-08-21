@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('message',[CategoryController::class, 'index']);
+Route::get('categories',[CategoryController::class, 'index']);
+Route::post('categories/store',[CategoryController::class, 'store']);
