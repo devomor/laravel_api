@@ -22,8 +22,8 @@ class CategorySeeder extends Seeder
         'slug'=>"css"
        ]);
        Category::create([
-        'name'=>'HTML',
-        'slug'=>"html"
+        'name'=>'JS',
+        'slug'=>"js"
        ]);
        Category::create([
         'name'=>'PHP',
